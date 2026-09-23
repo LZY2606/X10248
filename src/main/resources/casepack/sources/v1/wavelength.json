@@ -1,0 +1,7 @@
+{
+  "kind": "wavelength",
+  "units": "nm",
+  "frame": "vacuum",
+  "value": 632.8,
+  "note": "helium-neon line, calibrated wavemeter reading"
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "reference_sample",
+  "units": "dimensionless",
+  "frame": "stokes:IQUV",
+  "note": "recalibrated air reference scan 2026-09",
+  "matrix": [
+    [
+      0.997,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0.997,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0.997,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0.997
+    ]
+  ]
+}

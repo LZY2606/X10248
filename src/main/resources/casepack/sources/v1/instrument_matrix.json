@@ -1,0 +1,32 @@
+{
+  "kind": "instrument_matrix",
+  "units": "dimensionless",
+  "frame": "stokes:IQUV",
+  "note": "factory calibration card CAL-2026-04",
+  "matrix": [
+    [
+      1.0,
+      0.004,
+      0.0,
+      0.0
+    ],
+    [
+      0.003,
+      0.99,
+      0.002,
+      0.0
+    ],
+    [
+      0.0,
+      -0.002,
+      0.995,
+      0.003
+    ],
+    [
+      0.0,
+      0.0,
+      -0.003,
+      0.985
+    ]
+  ]
+}

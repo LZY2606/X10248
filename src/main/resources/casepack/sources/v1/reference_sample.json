@@ -1,0 +1,32 @@
+{
+  "kind": "reference_sample",
+  "units": "dimensionless",
+  "frame": "stokes:IQUV",
+  "note": "dry nitrogen air path",
+  "matrix": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ]
+}
