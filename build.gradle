@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    javalinVersion = '6.4.0'
+    jacksonVersion = '2.18.2'
+    commonsMathVersion = '3.6.1'
+    slf4jVersion = '2.0.16'
+    sqliteVersion = '3.47.1.0'
+    junitVersion = '5.11.3'
+}
+
+dependencies {
+    implementation "io.javalin:javalin:${javalinVersion}"
+    implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
+    implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:${jacksonVersion}"
+    implementation "org.apache.commons:commons-math3:${commonsMathVersion}"
+    implementation "org.xerial:sqlite-jdbc:${sqliteVersion}"
+    implementation "org.slf4j:slf4j-simple:${slf4jVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter:${junitVersion}"
+    testRuntimeOnly "org.junit.platform:junit-platform-launcher"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+application {
+    mainClass = 'app.polar.Main'
+}
+
+tasks.named('run') {
+    standardInput = System.in
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+        exceptionFormat = 'full'
+    }
+}
