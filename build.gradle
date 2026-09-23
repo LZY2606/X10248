@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'org.polarlab'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+dependencies {
+    implementation 'io.javalin:javalin:6.4.0'
+    implementation 'org.xerial:sqlite-jdbc:3.46.1.3'
+    implementation 'com.google.code.gson:gson:2.11.0'
+    runtimeOnly 'org.slf4j:slf4j-simple:2.0.13'
+
+    testImplementation platform('org.junit:junit-bom:5.11.3')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.htmlunit:htmlunit:4.11.0'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+application {
+    mainClass = 'org.polarlab.Main'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+        showStandardStreams = false
+    }
+}
+
+tasks.named('run') {
+    // DB 默认写到工作目录 data/ 下，可用 -PpolarDb 覆盖
+    systemProperty 'polarlab.db', (project.findProperty('polarDb') ?: 'data/polar-lab.sqlite')
+}
