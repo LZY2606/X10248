@@ -1,0 +1,51 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'pol'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    javalinVersion = '6.7.0'
+    jacksonVersion = '2.18.3'
+    ejmlVersion = '0.45.1'
+}
+
+dependencies {
+    implementation "io.javalin:javalin:${javalinVersion}"
+    implementation "org.xerial:sqlite-jdbc:3.47.2.0"
+    implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
+    implementation "org.slf4j:slf4j-simple:2.0.16"
+    implementation "org.ejml:ejml-core:${ejmlVersion}"
+    implementation "org.ejml:ejml-simple:${ejmlVersion}"
+
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+application {
+    mainClass = 'pol.Main'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+    }
+}
+
+tasks.named('run') {
+    standardInput = System.in
+}
