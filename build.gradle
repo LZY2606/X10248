@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'org.polarimetry'
+version = '1.0.0'
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(17) }
+}
+
+repositories { mavenCentral() }
+
+dependencies {
+    implementation 'io.javalin:javalin:6.4.0'
+    implementation 'org.slf4j:slf4j-simple:2.0.16'
+    implementation 'org.xerial:sqlite-jdbc:3.47.1.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.2'
+    implementation 'org.ejml:ejml-all:0.44.0'
+
+    testImplementation platform('org.junit:junit-bom:5.11.3')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'com.microsoft.playwright:playwright:1.49.0'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+application {
+    mainClass = 'org.polarimetry.Main'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+    testLogging { events 'passed', 'skipped', 'failed' }
+}
+
+tasks.named('run') {
+    standardInput = System.in
+}
