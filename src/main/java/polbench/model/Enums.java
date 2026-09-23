@@ -1,0 +1,27 @@
+package polbench.model;
+
+public final class Enums {
+    private Enums() {}
+
+    public enum SourceKind {
+        INTENSITY, STATE_ENCODING, DARK, REFERENCE, INSTRUMENT, WAVELENGTH, COVARIANCE, UNCONVERTIBLE
+    }
+
+    public enum ArtifactKind {
+        STATE_TABLE, DESIGN_MATRIX, MUELLER_ESTIMATE, PHYSICS_REPORT, DECOMPOSITION, ERROR_PROPAGATION, FINGERPRINT, DIAGNOSTIC
+    }
+
+    public enum EstimateStatus {
+        UNIQUE, NEAR_SINGULAR, SINGULAR, NO_SOLUTION
+    }
+
+    public enum BranchStatus {
+        OPEN, ACCEPTED, REJECTED, SUPERSEDED
+    }
+
+    public enum EventType {
+        SOURCE_IMPORTED, RULE_VERSION, DERIVED, CANDIDATE_PROPOSED, DECISION_ACCEPT,
+        DECISION_REJECT, PARAM_REVISION, BRANCH_FORK, CONFLICT_DETECTED, CONFLICT_RESOLVED,
+        IMPORT_ROLLBACK, DIAGNOSTIC_RAISED
+    }
+}
