@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'org.polarroom'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.javalin:javalin:6.7.0'
+    implementation 'org.xerial:sqlite-jdbc:3.53.4.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.19.2'
+    implementation 'org.slf4j:slf4j-simple:2.0.17'
+    implementation 'org.apache.commons:commons-math3:3.6.1'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.12.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.12.2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.12.2'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.34.0'
+}
+
+application {
+    mainClass = 'org.polarroom.App'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+        showStandardStreams = false
+    }
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
