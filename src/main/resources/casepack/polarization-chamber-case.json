@@ -1,0 +1,2087 @@
+{
+  "schemaVersion": 1,
+  "caseId": "POL-CHAMBER-001",
+  "label": "偏振矩阵室：Mueller 测量、仪器校正与物理可实现性审查",
+  "baseline": {
+    "intensity": {
+      "version": "intensity-v1",
+      "unit": "counts",
+      "readings": [
+        {
+          "psgId": "H",
+          "psaId": "H",
+          "countsRaw": "587.213 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "H",
+          "psaId": "P",
+          "countsRaw": "681.584 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "H",
+          "psaId": "V",
+          "countsRaw": "546.808 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "H",
+          "psaId": "R",
+          "countsRaw": "135.405 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "P",
+          "psaId": "H",
+          "countsRaw": "651.440 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "P",
+          "psaId": "P",
+          "countsRaw": "1017.159 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "P",
+          "psaId": "V",
+          "countsRaw": "494.858 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "P",
+          "psaId": "R",
+          "countsRaw": "618.644 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "V",
+          "psaId": "H",
+          "countsRaw": "497.765 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "V",
+          "psaId": "P",
+          "countsRaw": "473.362 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "V",
+          "psaId": "V",
+          "countsRaw": "508.213 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "V",
+          "psaId": "R",
+          "countsRaw": "884.795 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "R",
+          "psaId": "H",
+          "countsRaw": "948.231 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "R",
+          "psaId": "P",
+          "countsRaw": "505.930 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "R",
+          "psaId": "V",
+          "countsRaw": "121.769 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "R",
+          "psaId": "R",
+          "countsRaw": "510.100 counts",
+          "exposureRaw": "50 ms",
+          "note": ""
+        },
+        {
+          "psgId": "R",
+          "psaId": "R",
+          "countsRaw": "OVF counts",
+          "exposureRaw": "50 ms",
+          "note": "detector overflow; retained at source, never dropped for plotting"
+        }
+      ]
+    },
+    "optics": {
+      "version": "optics-v1",
+      "stokesOrder": "S0,S1,S2,S3",
+      "rotationSign": "+1",
+      "angleBasis": "lab-optical-axis; azimuth measured in plane facing detector",
+      "psg": [
+        {
+          "id": "H",
+          "stokes": [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "angleDeg": "0.0 deg"
+        },
+        {
+          "id": "P",
+          "stokes": [
+            1.0,
+            6.123233995736766e-17,
+            1.0,
+            0.0
+          ],
+          "angleDeg": "45.0 deg"
+        },
+        {
+          "id": "V",
+          "stokes": [
+            1.0,
+            -1.0,
+            1.2246467991473532e-16,
+            0.0
+          ],
+          "angleDeg": "90.0 deg"
+        },
+        {
+          "id": "R",
+          "stokes": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "angleDeg": null
+        }
+      ],
+      "psa": [
+        {
+          "id": "H",
+          "stokes": [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "angleDeg": "0.0 deg"
+        },
+        {
+          "id": "P",
+          "stokes": [
+            1.0,
+            6.123233995736766e-17,
+            1.0,
+            0.0
+          ],
+          "angleDeg": "45.0 deg"
+        },
+        {
+          "id": "V",
+          "stokes": [
+            1.0,
+            -1.0,
+            1.2246467991473532e-16,
+            0.0
+          ],
+          "angleDeg": "90.0 deg"
+        },
+        {
+          "id": "R",
+          "stokes": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "angleDeg": null
+        }
+      ]
+    },
+    "dark": {
+      "version": "dark-v1",
+      "note": "shutter-closed dark, per-PSA offset; exposure 50 ms",
+      "readings": [
+        {
+          "psaId": "H",
+          "countsRaw": "120.0 counts"
+        },
+        {
+          "psaId": "P",
+          "countsRaw": "120.0 counts"
+        },
+        {
+          "psaId": "V",
+          "countsRaw": "120.0 counts"
+        },
+        {
+          "psaId": "R",
+          "countsRaw": "120.0 counts"
+        }
+      ]
+    },
+    "reference": {
+      "version": "reference-v1",
+      "name": "calibrated air-path reference",
+      "m00Transmittance": 0.83,
+      "basis": "measured at same wavelength/exposure; identity Mueller assumed",
+      "mueller": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "note": "gain 0.83"
+    },
+    "instrument": {
+      "version": "instrument-v1",
+      "w": [
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          6.123233995736766e-17,
+          6.123233995736766e-17,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          -1.0,
+          -0.0,
+          -0.0,
+          1.2246467991473532e-16,
+          1.2246467991473532e-16,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          6.123233995736766e-17,
+          1.0,
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          6.123233995736766e-17,
+          1.0,
+          0.0,
+          6.123233995736766e-17,
+          3.749399456654644e-33,
+          6.123233995736766e-17,
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          6.123233995736766e-17,
+          1.0,
+          0.0,
+          -1.0,
+          -6.123233995736766e-17,
+          -1.0,
+          -0.0,
+          1.2246467991473532e-16,
+          7.498798913309288e-33,
+          1.2246467991473532e-16,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          6.123233995736766e-17,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          1.0,
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          0.0,
+          -0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          6.123233995736766e-17,
+          -6.123233995736766e-17,
+          7.498798913309288e-33,
+          0.0,
+          1.0,
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          0.0,
+          -0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          -1.0,
+          1.0,
+          -1.2246467991473532e-16,
+          -0.0,
+          1.2246467991473532e-16,
+          -1.2246467991473532e-16,
+          1.4997597826618576e-32,
+          0.0,
+          0.0,
+          -0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          0.0,
+          -0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.0,
+          0.0,
+          0.0,
+          1.0,
+          -1.0,
+          1.2246467991473532e-16,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          6.123233995736766e-17,
+          0.0,
+          0.0,
+          6.123233995736766e-17,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          -1.0,
+          -0.0,
+          -0.0,
+          -1.0,
+          1.2246467991473532e-16,
+          0.0,
+          0.0,
+          1.2246467991473532e-16,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "stokesOrder": "S0,S1,S2,S3",
+      "rotationSign": "+1",
+      "basis": "kron(PSA,PSG) coefficient map, counts basis",
+      "note": "16x16 generator/analyzer instrument matrix"
+    },
+    "wavelength": {
+      "quantityRaw": "532 nm",
+      "basis": "vacuum wavelength",
+      "note": "frequency-doubled Nd:YAG"
+    },
+    "covariance": {
+      "version": "covariance-v1",
+      "correlated": false,
+      "matrix": [
+        [
+          16.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          16.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          16.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          16.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          16.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          16.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          16.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          16.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          16.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          16.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          16.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          16.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          16.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          16.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          16.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          16.0
+        ]
+      ],
+      "unit": "count^2",
+      "note": "independent detector channels, sigma=4 counts"
+    }
+  },
+  "replay": [
+    {
+      "seq": 1,
+      "kind": "IMPORT_BASELINE",
+      "branch": "main",
+      "title": "Baseline import: seven source kinds stored separately",
+      "sources": "baseline",
+      "expect": {
+        "status": "UNIQUE",
+        "rank": 16
+      }
+    },
+    {
+      "seq": 2,
+      "kind": "REVISE_DARK",
+      "branch": "main",
+      "title": "Dark revision dark-v1 -> dark-v2 (local dependent recompute)",
+      "patch": {
+        "dark": {
+          "version": "dark-v2",
+          "note": "revised dark subtraction after thermal drift review; PSA H channel +18 counts",
+          "readings": [
+            {
+              "psaId": "H",
+              "countsRaw": "138.0 counts"
+            },
+            {
+              "psaId": "P",
+              "countsRaw": "120.0 counts"
+            },
+            {
+              "psaId": "V",
+              "countsRaw": "120.0 counts"
+            },
+            {
+              "psaId": "R",
+              "countsRaw": "120.0 counts"
+            }
+          ]
+        }
+      },
+      "expect": {
+        "invalidateScope": [
+          "estimate",
+          "physics",
+          "decomposition"
+        ],
+        "rawIntensity": "unchanged"
+      }
+    },
+    {
+      "seq": 3,
+      "kind": "REVISE_REFERENCE",
+      "branch": "main",
+      "title": "Reference sample revision reference-v1 -> reference-v2",
+      "patch": {
+        "reference": {
+          "version": "reference-v2",
+          "name": "calibrated air-path reference",
+          "m00Transmittance": 0.87,
+          "basis": "measured at same wavelength/exposure; identity Mueller assumed",
+          "mueller": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "note": "gain corrected 0.83 -> 0.87 after lamp power audit"
+        }
+      },
+      "expect": {
+        "invalidateScope": [
+          "estimate",
+          "physics",
+          "decomposition"
+        ]
+      }
+    },
+    {
+      "seq": 4,
+      "kind": "REVISE_COVARIANCE",
+      "branch": "main",
+      "title": "Correlated-error covariance covariance-v1 -> covariance-v2",
+      "patch": {
+        "covariance": {
+          "version": "covariance-v2",
+          "correlated": true,
+          "matrix": [
+            [
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381,
+              0.1997743627446134,
+              0.14314458595644144,
+              0.10256757777691139,
+              0.07349288092686941,
+              0.05265995028837315,
+              0.037732503194878614
+            ],
+            [
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381,
+              0.1997743627446134,
+              0.14314458595644144,
+              0.10256757777691139,
+              0.07349288092686941,
+              0.05265995028837315
+            ],
+            [
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381,
+              0.1997743627446134,
+              0.14314458595644144,
+              0.10256757777691139,
+              0.07349288092686941
+            ],
+            [
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381,
+              0.1997743627446134,
+              0.14314458595644144,
+              0.10256757777691139
+            ],
+            [
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381,
+              0.1997743627446134,
+              0.14314458595644144
+            ],
+            [
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381,
+              0.1997743627446134
+            ],
+            [
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381
+            ],
+            [
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886
+            ],
+            [
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683
+            ],
+            [
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311
+            ],
+            [
+              0.1997743627446134,
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462
+            ],
+            [
+              0.14314458595644144,
+              0.1997743627446134,
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807
+            ],
+            [
+              0.10256757777691139,
+              0.14314458595644144,
+              0.1997743627446134,
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077
+            ],
+            [
+              0.07349288092686941,
+              0.10256757777691139,
+              0.14314458595644144,
+              0.1997743627446134,
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153
+            ],
+            [
+              0.05265995028837315,
+              0.07349288092686941,
+              0.10256757777691139,
+              0.14314458595644144,
+              0.1997743627446134,
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219
+            ],
+            [
+              0.037732503194878614,
+              0.05265995028837315,
+              0.07349288092686941,
+              0.10256757777691139,
+              0.14314458595644144,
+              0.1997743627446134,
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0
+            ]
+          ],
+          "unit": "count^2",
+          "note": "correlated source drift added; off-diagonals non-zero"
+        }
+      },
+      "expect": {
+        "invalidateScope": [
+          "estimate.covariance",
+          "errorpropagation"
+        ],
+        "correlated": true
+      }
+    },
+    {
+      "seq": 5,
+      "kind": "SINGULAR_DESIGN",
+      "branch": "branch/singular-design",
+      "title": "Near-singular design must not be force-inverted",
+      "sources": "baseline",
+      "patch": {
+        "intensity": {
+          "version": "intensity-singular-v1",
+          "unit": "counts",
+          "readings": [
+            {
+              "psgId": "H",
+              "psaId": "H",
+              "countsRaw": "587.213 counts",
+              "exposureRaw": "50 ms",
+              "note": "subset experiment: only H/V states were scheduled"
+            },
+            {
+              "psgId": "H",
+              "psaId": "V",
+              "countsRaw": "546.808 counts",
+              "exposureRaw": "50 ms",
+              "note": "subset experiment: only H/V states were scheduled"
+            },
+            {
+              "psgId": "V",
+              "psaId": "H",
+              "countsRaw": "497.765 counts",
+              "exposureRaw": "50 ms",
+              "note": "subset experiment: only H/V states were scheduled"
+            },
+            {
+              "psgId": "V",
+              "psaId": "V",
+              "countsRaw": "508.213 counts",
+              "exposureRaw": "50 ms",
+              "note": "subset experiment: only H/V states were scheduled"
+            },
+            {
+              "psgId": "H",
+              "psaId": "H",
+              "countsRaw": "587.213 counts",
+              "exposureRaw": "50 ms",
+              "note": "duplicate-state repeat; does not add design rank"
+            },
+            {
+              "psgId": "H",
+              "psaId": "V",
+              "countsRaw": "546.918 counts",
+              "exposureRaw": "50 ms",
+              "note": "duplicate-state repeat; does not add design rank"
+            },
+            {
+              "psgId": "V",
+              "psaId": "H",
+              "countsRaw": "497.985 counts",
+              "exposureRaw": "50 ms",
+              "note": "duplicate-state repeat; does not add design rank"
+            },
+            {
+              "psgId": "V",
+              "psaId": "V",
+              "countsRaw": "508.213 counts",
+              "exposureRaw": "50 ms",
+              "note": "duplicate-state repeat; does not add design rank"
+            },
+            {
+              "psgId": "H",
+              "psaId": "H",
+              "countsRaw": "587.323 counts",
+              "exposureRaw": "50 ms",
+              "note": "duplicate-state repeat; does not add design rank"
+            },
+            {
+              "psgId": "H",
+              "psaId": "V",
+              "countsRaw": "547.028 counts",
+              "exposureRaw": "50 ms",
+              "note": "duplicate-state repeat; does not add design rank"
+            },
+            {
+              "psgId": "V",
+              "psaId": "H",
+              "countsRaw": "497.765 counts",
+              "exposureRaw": "50 ms",
+              "note": "duplicate-state repeat; does not add design rank"
+            },
+            {
+              "psgId": "V",
+              "psaId": "V",
+              "countsRaw": "508.323 counts",
+              "exposureRaw": "50 ms",
+              "note": "duplicate-state repeat; does not add design rank"
+            },
+            {
+              "psgId": "H",
+              "psaId": "H",
+              "countsRaw": "587.433 counts",
+              "exposureRaw": "50 ms",
+              "note": "duplicate-state repeat; does not add design rank"
+            },
+            {
+              "psgId": "H",
+              "psaId": "V",
+              "countsRaw": "546.808 counts",
+              "exposureRaw": "50 ms",
+              "note": "duplicate-state repeat; does not add design rank"
+            },
+            {
+              "psgId": "V",
+              "psaId": "H",
+              "countsRaw": "497.875 counts",
+              "exposureRaw": "50 ms",
+              "note": "duplicate-state repeat; does not add design rank"
+            },
+            {
+              "psgId": "V",
+              "psaId": "V",
+              "countsRaw": "508.433 counts",
+              "exposureRaw": "50 ms",
+              "note": "duplicate-state repeat; does not add design rank"
+            }
+          ]
+        }
+      },
+      "expect": {
+        "status": "INDETERMINATE",
+        "maxRank": 15,
+        "rule": "NEAR_SINGULAR_NO_INVERSE",
+        "candidates": "all legal null-space solutions retained"
+      }
+    },
+    {
+      "seq": 6,
+      "kind": "STOKES_ORDER_CHANGE",
+      "branch": "branch/stokes-order",
+      "title": "Stokes order S0,S1,S2,S3 -> S0,S2,S3,S1 changes fingerprint",
+      "sources": "baseline",
+      "patch": {
+        "optics": {
+          "version": "optics-S0S2S3S1-+1",
+          "stokesOrder": "S0,S2,S3,S1",
+          "rotationSign": "+1",
+          "angleBasis": "lab-optical-axis; azimuth measured in plane facing detector",
+          "psg": [
+            {
+              "id": "H",
+              "stokes": [
+                1.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "angleDeg": "0.0 deg"
+            },
+            {
+              "id": "P",
+              "stokes": [
+                1.0,
+                1.0,
+                0.0,
+                6.123233995736766e-17
+              ],
+              "angleDeg": "45.0 deg"
+            },
+            {
+              "id": "V",
+              "stokes": [
+                1.0,
+                1.2246467991473532e-16,
+                0.0,
+                -1.0
+              ],
+              "angleDeg": "90.0 deg"
+            },
+            {
+              "id": "R",
+              "stokes": [
+                1.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              "angleDeg": null
+            }
+          ],
+          "psa": [
+            {
+              "id": "H",
+              "stokes": [
+                1.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "angleDeg": "0.0 deg"
+            },
+            {
+              "id": "P",
+              "stokes": [
+                1.0,
+                1.0,
+                0.0,
+                6.123233995736766e-17
+              ],
+              "angleDeg": "45.0 deg"
+            },
+            {
+              "id": "V",
+              "stokes": [
+                1.0,
+                1.2246467991473532e-16,
+                0.0,
+                -1.0
+              ],
+              "angleDeg": "90.0 deg"
+            },
+            {
+              "id": "R",
+              "stokes": [
+                1.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              "angleDeg": null
+            }
+          ]
+        }
+      },
+      "expect": {
+        "fingerprintChanges": true,
+        "rule": "STOKES_ORDER_IN_FINGERPRINT"
+      }
+    },
+    {
+      "seq": 7,
+      "kind": "ROTATION_SIGN_CHANGE",
+      "branch": "branch/rotation-sign",
+      "title": "Rotation sign +1 -> -1 changes fingerprint and S3 signs",
+      "sources": "baseline",
+      "patch": {
+        "optics": {
+          "version": "optics-S0S1S2S3--1",
+          "stokesOrder": "S0,S1,S2,S3",
+          "rotationSign": "-1",
+          "angleBasis": "lab-optical-axis; azimuth measured in plane facing detector",
+          "psg": [
+            {
+              "id": "H",
+              "stokes": [
+                1.0,
+                1.0,
+                -0.0,
+                0.0
+              ],
+              "angleDeg": "0.0 deg"
+            },
+            {
+              "id": "P",
+              "stokes": [
+                1.0,
+                6.123233995736766e-17,
+                -1.0,
+                0.0
+              ],
+              "angleDeg": "45.0 deg"
+            },
+            {
+              "id": "V",
+              "stokes": [
+                1.0,
+                -1.0,
+                -1.2246467991473532e-16,
+                0.0
+              ],
+              "angleDeg": "90.0 deg"
+            },
+            {
+              "id": "R",
+              "stokes": [
+                1.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "angleDeg": null
+            }
+          ],
+          "psa": [
+            {
+              "id": "H",
+              "stokes": [
+                1.0,
+                1.0,
+                -0.0,
+                0.0
+              ],
+              "angleDeg": "0.0 deg"
+            },
+            {
+              "id": "P",
+              "stokes": [
+                1.0,
+                6.123233995736766e-17,
+                -1.0,
+                0.0
+              ],
+              "angleDeg": "45.0 deg"
+            },
+            {
+              "id": "V",
+              "stokes": [
+                1.0,
+                -1.0,
+                -1.2246467991473532e-16,
+                0.0
+              ],
+              "angleDeg": "90.0 deg"
+            },
+            {
+              "id": "R",
+              "stokes": [
+                1.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "angleDeg": null
+            }
+          ]
+        }
+      },
+      "expect": {
+        "fingerprintChanges": true,
+        "rule": "ROTATION_CONVENTION_IN_FINGERPRINT"
+      }
+    },
+    {
+      "seq": 8,
+      "kind": "NONPHYSICAL_NOISE",
+      "branch": "branch/nonphysical",
+      "title": "Non-physical noisy candidate flagged, never projected-and-claimed",
+      "sources": "baseline",
+      "patch": {
+        "intensity": {
+          "version": "intensity-noisy-v1",
+          "unit": "counts",
+          "readings": [
+            {
+              "psgId": "H",
+              "psaId": "H",
+              "countsRaw": "698.494 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "H",
+              "psaId": "P",
+              "countsRaw": "1111.417 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "H",
+              "psaId": "V",
+              "countsRaw": "854.744 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "H",
+              "psaId": "R",
+              "countsRaw": "341.042 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "P",
+              "psaId": "H",
+              "countsRaw": "489.103 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "P",
+              "psaId": "P",
+              "countsRaw": "329.695 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "P",
+              "psaId": "V",
+              "countsRaw": "394.179 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "P",
+              "psaId": "R",
+              "countsRaw": "475.335 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "V",
+              "psaId": "H",
+              "countsRaw": "1105.655 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "V",
+              "psaId": "P",
+              "countsRaw": "448.428 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "V",
+              "psaId": "V",
+              "countsRaw": "499.659 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "V",
+              "psaId": "R",
+              "countsRaw": "1187.599 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "R",
+              "psaId": "H",
+              "countsRaw": "688.256 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "R",
+              "psaId": "P",
+              "countsRaw": "341.833 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "R",
+              "psaId": "V",
+              "countsRaw": "218.872 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            },
+            {
+              "psgId": "R",
+              "psaId": "R",
+              "countsRaw": "757.596 counts",
+              "exposureRaw": "50 ms",
+              "note": "high-noise batch (sigma 320 counts); candidate expected to violate PSD"
+            }
+          ]
+        },
+        "covariance": {
+          "version": "covariance-v2",
+          "correlated": true,
+          "matrix": [
+            [
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381,
+              0.1997743627446134,
+              0.14314458595644144,
+              0.10256757777691139,
+              0.07349288092686941,
+              0.05265995028837315,
+              0.037732503194878614
+            ],
+            [
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381,
+              0.1997743627446134,
+              0.14314458595644144,
+              0.10256757777691139,
+              0.07349288092686941,
+              0.05265995028837315
+            ],
+            [
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381,
+              0.1997743627446134,
+              0.14314458595644144,
+              0.10256757777691139,
+              0.07349288092686941
+            ],
+            [
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381,
+              0.1997743627446134,
+              0.14314458595644144,
+              0.10256757777691139
+            ],
+            [
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381,
+              0.1997743627446134,
+              0.14314458595644144
+            ],
+            [
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381,
+              0.1997743627446134
+            ],
+            [
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886,
+              0.2788075828600381
+            ],
+            [
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683,
+              0.3891073268476886
+            ],
+            [
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311,
+              0.5430430200406683
+            ],
+            [
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462,
+              0.7578775861250311
+            ],
+            [
+              0.1997743627446134,
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807,
+              1.0577033758903462
+            ],
+            [
+              0.14314458595644144,
+              0.1997743627446134,
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077,
+              1.47614397344807
+            ],
+            [
+              0.10256757777691139,
+              0.14314458595644144,
+              0.1997743627446134,
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153,
+              2.060124870560077
+            ],
+            [
+              0.07349288092686941,
+              0.10256757777691139,
+              0.14314458595644144,
+              0.1997743627446134,
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219,
+              2.8751358665825153
+            ],
+            [
+              0.05265995028837315,
+              0.07349288092686941,
+              0.10256757777691139,
+              0.14314458595644144,
+              0.1997743627446134,
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0,
+              4.012575339213219
+            ],
+            [
+              0.037732503194878614,
+              0.05265995028837315,
+              0.07349288092686941,
+              0.10256757777691139,
+              0.14314458595644144,
+              0.1997743627446134,
+              0.2788075828600381,
+              0.3891073268476886,
+              0.5430430200406683,
+              0.7578775861250311,
+              1.0577033758903462,
+              1.47614397344807,
+              2.060124870560077,
+              2.8751358665825153,
+              4.012575339213219,
+              16.0
+            ]
+          ],
+          "unit": "count^2",
+          "note": "correlated source drift added; off-diagonals non-zero"
+        }
+      },
+      "expect": {
+        "rule": "FLAG_VIOLATION_NO_PROJECTION",
+        "violationCodesPresent": [
+          "NEGATIVE_COHERENCY_EIGENVALUE"
+        ]
+      }
+    },
+    {
+      "seq": 9,
+      "kind": "CONFLICTING_DECISIONS",
+      "branch": "main",
+      "title": "Two reviewers accept different decomposition candidates concurrently",
+      "conflict": {
+        "candidateA": "LC-FORWARD",
+        "candidateB": "LC-REVERSE"
+      },
+      "expect": {
+        "secondCommit": "VERSION_CONFLICT",
+        "diffVisible": true,
+        "undoRestores": true
+      }
+    },
+    {
+      "seq": 10,
+      "kind": "WAVELENGTH_REFINE",
+      "branch": "main",
+      "title": "Labeling-only wavelength refinement shows scoped invalidation",
+      "patch": {
+        "wavelength": {
+          "quantityRaw": "532.5 nm",
+          "basis": "vacuum wavelength",
+          "note": "refined wavemeter reading; labeling-only dependency"
+        }
+      },
+      "expect": {
+        "invalidateScope": [
+          "wavelength.label"
+        ],
+        "estimate": "unchanged"
+      }
+    }
+  ]
+}
