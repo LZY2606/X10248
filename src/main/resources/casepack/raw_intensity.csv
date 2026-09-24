@@ -1,0 +1,17 @@
+state_id,raw_counts,dark_counts,exposure_s,detector,unit
+GH-AH,978.752,3.2,0.5,Si-PD,counts
+GH-AV,545.928,3.4,0.5,Si-PD,counts
+GH-AP,581.827,3.1,0.5,Si-PD,counts
+GH-AR,763.78,3.3,0.5,Si-PD,counts
+GV-AH,288.197,3.0,0.5,Si-PD,counts
+GV-AV,199.336,3.2,0.5,Si-PD,counts
+GV-AP,206.057,3.4,0.5,Si-PD,counts
+GV-AR,243.736,3.1,0.5,Si-PD,counts
+GP-AH,433.937,3.3,0.5,Si-PD,counts
+GP-AV,272.639,3.0,0.5,Si-PD,counts
+GP-AP,285.814,3.2,0.5,Si-PD,counts
+GP-AR,353.471,3.4,0.5,Si-PD,counts
+GR-AH,632.711,3.1,0.5,Si-PD,counts
+GR-AV,374.426,3.3,0.5,Si-PD,counts
+GR-AP,393.778,3.0,0.5,Si-PD,counts
+GR-AR,503.208,3.2,0.5,Si-PD,counts

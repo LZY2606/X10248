@@ -1,0 +1,33 @@
+{
+ "reference_id": "REF-AIR-001",
+ "version": 1,
+ "certified_mueller": [
+  [
+   1,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   1,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1
+  ]
+ ],
+ "uncertainty": 0.002,
+ "basis": "lab-frame x=horizontal",
+ "unit": "normalized"
+}

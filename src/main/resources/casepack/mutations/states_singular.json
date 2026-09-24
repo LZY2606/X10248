@@ -1,0 +1,382 @@
+{
+ "stokes_order": [
+  "I",
+  "Q",
+  "U",
+  "V"
+ ],
+ "rotation_convention": "CCW_LOOKING_INTO_BEAM",
+ "angle_unit": "deg",
+ "coordinate_basis": "lab-frame x=horizontal",
+ "states": [
+  {
+   "state_id": "GH-AH",
+   "generator": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GH-AH",
+   "generator": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GH-AH",
+   "generator": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GH-AH",
+   "generator": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GH-AV",
+   "generator": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GH-AV",
+   "generator": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GH-AV",
+   "generator": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GH-AV",
+   "generator": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GV-AH",
+   "generator": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GV-AH",
+   "generator": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GV-AH",
+   "generator": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GV-AH",
+   "generator": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 0.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GV-AV",
+   "generator": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GV-AV",
+   "generator": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GV-AV",
+   "generator": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "state_id": "GV-AV",
+   "generator": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   },
+   "analyzer": {
+    "polarizer_deg": 90.0,
+    "retarder": null,
+    "stokes": [
+     1,
+     -1,
+     0,
+     0
+    ]
+   }
+  }
+ ],
+ "note": "only H/V generator and analyzer states: design matrix rank 4"
+}

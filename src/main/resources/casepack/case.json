@@ -1,0 +1,123 @@
+{
+ "case_id": "POLAR-MAT-LAB-001",
+ "title": "偏振矩阵室：Mueller 测量、仪器校正与物理可实现性审查",
+ "narrative": "偏振实验组导入多个发生器与分析器状态下的强度测量，估计 Mueller 矩阵并审查校正、分解和误差传播。",
+ "sources": [
+  {
+   "id": "raw_intensity",
+   "kind": "raw_intensity",
+   "file": "raw_intensity.csv",
+   "unit": "counts",
+   "basis": "detector-frame"
+  },
+  {
+   "id": "states",
+   "kind": "state_encoding",
+   "file": "states.json",
+   "unit": "deg",
+   "basis": "lab-frame x=horizontal"
+  },
+  {
+   "id": "dark_field",
+   "kind": "dark_field",
+   "file": "dark_field.csv",
+   "unit": "counts",
+   "basis": "detector-frame"
+  },
+  {
+   "id": "reference_sample",
+   "kind": "reference_sample",
+   "file": "reference_sample.json",
+   "unit": "normalized",
+   "basis": "lab-frame x=horizontal"
+  },
+  {
+   "id": "instrument_matrix",
+   "kind": "instrument_matrix",
+   "file": "instrument_matrix.json",
+   "unit": "dimensionless",
+   "basis": "detector-frame"
+  },
+  {
+   "id": "wavelength",
+   "kind": "wavelength",
+   "file": "wavelength.txt",
+   "unit": "nm",
+   "basis": "vacuum"
+  },
+  {
+   "id": "covariance",
+   "kind": "covariance",
+   "file": "covariance.json",
+   "unit": "counts^2",
+   "basis": "detector-frame"
+  },
+  {
+   "id": "reduction_params",
+   "kind": "reduction_params",
+   "file": "reduction_params.json",
+   "unit": "-",
+   "basis": "reduction-convention"
+  }
+ ],
+ "steps": [
+  {
+   "step": "baseline",
+   "action": "import+derive",
+   "detail": "初始导入七类来源并估计 Mueller 矩阵"
+  },
+  {
+   "step": "param_revision",
+   "action": "revise reduction_params",
+   "file": "reduction_params.json",
+   "detail": "参数修订：阈值与约定不变，版本+1，触发依赖失效"
+  },
+  {
+   "step": "dark_revision",
+   "action": "replace dark_field",
+   "file": "mutations/dark_field_v2.csv",
+   "detail": "只影响依赖暗场的派生"
+  },
+  {
+   "step": "singular_design",
+   "action": "replace states",
+   "file": "mutations/states_singular.json",
+   "detail": "设计矩阵近奇异：不强行求逆"
+  },
+  {
+   "step": "stokes_order_change",
+   "action": "replace states",
+   "file": "mutations/states_stokes_order.json",
+   "detail": "Stokes 顺序变化进入指纹"
+  },
+  {
+   "step": "rotation_sign",
+   "action": "replace states",
+   "file": "mutations/states_rotation_sign.json",
+   "detail": "旋转正负约定进入指纹"
+  },
+  {
+   "step": "nonphysical_noise",
+   "action": "replace raw_intensity",
+   "file": "mutations/raw_intensity_noisy.csv",
+   "detail": "非物理噪声解：标出违约不投影"
+  },
+  {
+   "step": "reference_v2",
+   "action": "replace reference_sample",
+   "file": "mutations/reference_sample_v2.json",
+   "detail": "参考样版本变化：局部失效"
+  },
+  {
+   "step": "correlated_errors",
+   "action": "replace covariance",
+   "file": "mutations/covariance_v2.json",
+   "detail": "相关误差：误差传播变化且单位不可转换留诊断"
+  },
+  {
+   "step": "conflict",
+   "action": "two adjudications same expected_version",
+   "detail": "互相冲突的人工决定：后提交者见版本冲突与双方差异"
+  }
+ ]
+}

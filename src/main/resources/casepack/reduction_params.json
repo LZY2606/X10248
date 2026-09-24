@@ -1,0 +1,16 @@
+{
+ "version": 1,
+ "stokes_order": [
+  "I",
+  "Q",
+  "U",
+  "V"
+ ],
+ "rotation_convention": "CCW_LOOKING_INTO_BEAM",
+ "dark_subtraction": true,
+ "instrument_correction": true,
+ "condition_threshold": 100000000.0,
+ "physical_tol": 1e-09,
+ "unit": "-",
+ "basis": "reduction-convention"
+}
