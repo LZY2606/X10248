@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'poptics'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.javalin:javalin:6.5.0'
+    implementation 'org.ejml:ejml-all:0.44.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.4'
+    implementation 'org.slf4j:slf4j-simple:2.0.17'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.11.4'
+}
+
+application {
+    mainClass = 'poptics.Main'
+}
+
+tasks.named('test') {
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+        showStandardStreams = false
+    }
+    useJUnitPlatform()
+}
