@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>偏振矩阵室 · Mueller 复核工作区</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header>
+  <h1>偏振矩阵室 <small>Mueller 测量 · 仪器校正 · 物理可实现性审查</small></h1>
+  <div class="branch-bar">
+    <label>分支
+      <select id="branchSelect"></select>
+    </label>
+    <button id="forkBtn" title="从当前视图新建分支（不改写原数据）">新建分支</button>
+    <button id="undoBtn" title="撤销最后一次裁定或事件，恢复前一分支状态">撤销最后操作</button>
+    <button id="exportBtn">导出快照</button>
+    <button id="importBtn" title="可先删除本地数据库再导入">删除库并导入快照</button>
+    <span id="revBadge" class="badge"></span>
+    <span id="ruleBadge" class="badge muted"></span>
+  </div>
+</header>
+
+<main>
+  <section class="col">
+    <h2>事件与来源链</h2>
+    <div id="events" class="list"></div>
+    <h2>七类分离来源 <small>原始表示保留，派生层才规范化</small></h2>
+    <div id="sources" class="list"></div>
+  </section>
+
+  <section class="col wide">
+    <div class="tabs">
+      <button data-tab="design" class="active">测量设计条件数</button>
+      <button data-tab="matrix">矩阵元素与误差</button>
+      <button data-tab="physics">物理约束残差</button>
+      <button data-tab="decomp">多种分解候选</button>
+    </div>
+    <div id="tab-design" class="tab active"></div>
+    <div id="tab-matrix" class="tab"></div>
+    <div id="tab-physics" class="tab"></div>
+    <div id="tab-decomp" class="tab"></div>
+
+    <h2>裁定</h2>
+    <div class="ruling">
+      <input id="rationale" placeholder="裁定理由（必填建议）">
+      <button id="acceptBtn" class="accept">接受候选</button>
+      <button id="rejectBtn" class="reject">否定候选</button>
+      <span id="conflictBox" class="conflict hidden"></span>
+    </div>
+    <div id="decisions" class="list"></div>
+
+    <h2>案例重放（领域专用，固定边界情形）</h2>
+    <div class="replay">
+      <button data-step="S3">暗场修订</button>
+      <button data-step="S4">Stokes 顺序</button>
+      <button data-step="S5">旋转正负</button>
+      <button data-step="S6">非物理噪声解</button>
+      <button data-step="S7">参考样版本</button>
+      <button data-step="S8">相关误差</button>
+      <button data-step="S10">局部源改动</button>
+      <button id="conflictDemo">两个窗口冲突演示</button>
+    </div>
+  </section>
+</main>
+
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
