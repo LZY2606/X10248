@@ -1,0 +1,57 @@
+{
+  "revisions": {
+    "dark-v2": {
+      "file": "dark-v2.csv",
+      "kind": "dark",
+      "version": "v2",
+      "change": "offset +6 counts (revised dark calibration)",
+      "scope": "derived Mueller of branches using dark>=v2; raw intensity untouched"
+    },
+    "covariance-v2": {
+      "file": "covariance-v2.csv",
+      "kind": "covariance",
+      "version": "v2",
+      "change": "nearest-neighbor correlated errors rho=0.18",
+      "scope": "error bars/GLS weights only"
+    },
+    "reference-v2": {
+      "file": "reference-v2.csv",
+      "kind": "reference",
+      "version": "v2",
+      "change": "known m00 1.00 -> 0.97",
+      "scope": "calibration factor + all candidate Mueller entries"
+    },
+    "singular": {
+      "state": "state-singular.csv",
+      "intensity": "intensity-singular.csv",
+      "dark": "dark-singular.csv",
+      "change": "all PSG states identical -> design matrix singular",
+      "expect": "no force-inverse; nullspace + indeterminate"
+    },
+    "nearsingular": {
+      "state": "state-nearsingular.csv",
+      "intensity": "intensity-nearsingular.csv",
+      "dark": "dark-nearsingular.csv",
+      "change": "two PSG axes 1e-5 deg apart",
+      "expect": "huge condition number, UNSTABLE, not accepted"
+    },
+    "noise": {
+      "intensity": "intensity-noise-v1.csv",
+      "change": "large structured outliers",
+      "expect": "nonphysical Mueller flagged, not projected"
+    },
+    "unconvertible": {
+      "intensity": "intensity-unconvertible.csv",
+      "change": "OVERFLOW token",
+      "expect": "kept raw + diagnosed, row excluded from fit"
+    },
+    "stokes-order": {
+      "change": "reinterpret with stokesOrder U,Q,I,V",
+      "scope": "fingerprint changes, candidates re-derived on a branch"
+    },
+    "rotation-sign": {
+      "change": "reinterpret with rotationSign=-1",
+      "scope": "fingerprint changes, angles mirrored"
+    }
+  }
+}

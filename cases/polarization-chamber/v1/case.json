@@ -1,0 +1,88 @@
+{
+  "name": "Polarization Matrix Chamber \u2014 Mueller Measurement, Instrument Calibration & Physical-Realizability Review",
+  "domain": "polarization-optics",
+  "convention": {
+    "stokesOrder": [
+      "I",
+      "Q",
+      "U",
+      "V"
+    ],
+    "rotationSign": 1,
+    "angleBasis": "degrees, +CCW looking into beam",
+    "vecMueller": "row-major (m00..m33); design X[i,4r+c]=a_i[r] g_i[c]"
+  },
+  "layers": {
+    "intensity": {
+      "file": "intensity-v1.csv",
+      "version": "v1",
+      "unit": "counts",
+      "basis": "detector raw digital counts"
+    },
+    "state": {
+      "file": "state-v1.csv",
+      "version": "v1",
+      "unit": "degree",
+      "basis": "PSG/PSA optic kind + mechanical angle"
+    },
+    "dark": {
+      "file": "dark-v1.csv",
+      "version": "v1",
+      "unit": "counts",
+      "basis": "shutter-closed detector offset"
+    },
+    "instrument": {
+      "file": "instrument-v1.csv",
+      "version": "v1",
+      "unit": "dimensionless",
+      "basis": "per-state response gain, lab frame"
+    },
+    "wavelength": {
+      "file": "wavelength-v1.csv",
+      "version": "v1",
+      "unit": "nm",
+      "basis": "vacuum"
+    },
+    "reference": {
+      "file": "reference-v1.csv",
+      "version": "v1",
+      "unit": "dimensionless",
+      "basis": "canonical IQUV known Mueller"
+    },
+    "covariance": {
+      "file": "covariance-v1.csv",
+      "version": "v1",
+      "unit": "counts^2",
+      "basis": "detector covariance, diagonal v1"
+    }
+  },
+  "truth": {
+    "mueller": [
+      [
+        0.9,
+        0.08273279985684961,
+        0.06942106184614624,
+        0.0
+      ],
+      [
+        0.04854959989263723,
+        0.46132959959616426,
+        0.0750753176682453,
+        -0.7620350504014904
+      ],
+      [
+        0.07544848228678952,
+        0.07347414398111378,
+        0.8835104471655001,
+        0.1343673396313178
+      ],
+      [
+        0.06012040311645328,
+        0.7648083645793445,
+        -0.137672446766168,
+        0.44674825125567097
+      ]
+    ],
+    "note": "synthesis ground truth, not imported by the app"
+  }
+}
