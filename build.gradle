@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+dependencies {
+    implementation 'io.javalin:javalin:6.4.3'
+    implementation 'org.ejml:ejml-core:0.44.0'
+    implementation 'org.ejml:ejml-ddense:0.44.0'
+    implementation 'org.xerial:sqlite-jdbc:3.46.1.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.2'
+    implementation 'org.slf4j:slf4j-simple:2.0.13'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.10.2'
+}
+
+application {
+    mainClass = 'com.polar.Main'
+}
+
+tasks.named('test') {
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+        exceptionFormat = 'full'
+    }
+    useJUnitPlatform()
+}
